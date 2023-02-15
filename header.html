@@ -1,0 +1,27 @@
+<header class="wrapper__header header">
+    <div class="header__content">
+        <div class="header__icon"> 
+            <a href=""><img src="img/header-logo.png" alt="Картинка логотип"></a>
+        </div>
+        <div class="header__menu header__menu__block">
+            <ul class="header__menu__items" onclick="">
+                <li><a href="index.html" target="self" class="header__menu__item menu__link" data-link="1">Головна</a></li>
+                <li><a href="#" class="header__menu__item" data-link="2">Меню</a></li>
+                <li><a href="poster.html" target="self" class="header__menu__item poster__link" data-link="3">Афіша</a></li>
+                <li><a href="corporate.html" class="header__menu__item corporate__link" data-link="4">Співпраця</a></li>
+                <li><a href="gallery.html" class="header__menu__item gallery__link" data-link="5">Галерея</a></li>
+                <li><a href="#" class="header__menu__item" data-link="6">Новини</a></li>
+            </ul>
+            <div class="header__burger" onclick="document.querySelector('.header__menu__items').classList.toggle('header__menu__burger')
+            document.querySelector('.header__burger').classList.toggle('header__burger_menu'); document.querySelector('html').classList.toggle('overflow')">
+                <span class="header__burger-span1"></span>
+            </div>
+        </div>
+        <div class="header__button">
+            <div class="header__btn"><a href="#" class="header__btn__text">Бронювання</a></div>
+        </div>
+    </div>
+</header>
+
+<script src="js/header.js"></script>
+

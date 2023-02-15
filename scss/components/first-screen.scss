@@ -1,0 +1,176 @@
+@import '../fonts/font.scss';
+
+.screen__block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    @media screen and (max-width: 1320px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 380px) {
+        padding: 0 8px 120px;
+    }
+}
+
+.screen__block__part{
+    background: url('../img/Rectangle\ 30.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 25px;
+    padding-bottom: 45px;
+    @include adaptive-value('padding-left', 60, 5, 1);
+    @include adaptive-value('height', 540, 300, 1);
+    @media screen and (max-width: 1320px) {
+        margin: 0 0 50px 0;
+    }
+    @media screen and (max-width: 690px) {
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 425px) {
+        align-items: center;
+    }
+
+}
+.dish{
+    @media screen and (max-width: 768px) {
+        padding-top: 57px;
+    }
+}
+.section__block__text {
+    font-family: Faustina;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #210E09;
+    @media screen and (max-width: 768px) {
+        font-weight: 800;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 425px) {
+        font-weight: 600;
+    }
+}
+
+.section_block{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 7px;
+    width: 154px;
+    height: 44px;
+    border-radius: 5px;
+    cursor: pointer;
+    @include adaptive-value('width', 154, 120, 1);
+    @include adaptive-value('height', 44, 30, 1);
+}
+
+.screen__part__title {
+    display: inline-block;
+    font-family: 'Faustina';
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 50px;
+    @include adaptive-value('font-size', 25, 15, 1);
+    @media screen and (max-width: 768px) {
+        line-height: 205%;
+    }
+    @media screen and (max-width: 690px) {
+        text-align: center;
+    }
+}
+.screen__block__event {
+}
+
+//***************************************************
+
+.screen__block__event {
+}
+.block__event {
+    width: 60%;
+    @media screen and (max-width: 1320px) {
+        width: 100%;
+    }
+}
+.block__event__btns {
+    display: flex;
+}
+.btn__background {
+    background-color: rgba(213, 98, 29, 0.1);
+}
+.block__event__button-2, .block__event__button-1 {
+    background-color: rgba(213, 98, 29, 0.05);
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+.block__event__button-1, .block__event__button-2{
+    font-family: Faustina;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px 7px;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        font-weight: 500;
+    }
+}
+.event__card {
+    background-color: rgba(213, 98, 29, 0.1);
+}
+.event__card__items {
+    display: flex;
+    flex-wrap: wrap;
+    // padding-top: 46px;
+    justify-content: center;
+}
+.event__cards__item:nth-child(odd){
+    margin-right: 26px;
+}
+.event__cards__item{
+    margin-bottom: 26px;
+    @media screen and (max-width: 1320px) {
+        margin: 0 20px 20px;
+    }
+}
+.event__card__item:nth-child(odd){
+    margin-right: 26px;
+}
+.event__card__item{
+    margin-bottom: 26px;
+    @media screen and (max-width: 1320px) {
+        margin: 0 20px 20px;
+    }
+}
+
+.event__card__items li img, .event__card__two__items li img{
+    @media screen and (max-width: 1320px) {
+        @include adaptive-value('width', 200, 250, 1);
+    }
+}
+.event__card__two__items {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.event__card__items, .event__card__two__items{
+    padding: 33px 5px;
+}

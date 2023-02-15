@@ -1,0 +1,64 @@
+.poster.menu__section{
+    padding-bottom: 80px;
+}
+
+.poster__body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+.poster__content {
+    position: relative;
+    width: 215px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    @include adaptive-value('margin-right', 20, 0, 0);
+    @include adaptive-value('margin-bottom', 20, 20, 0);
+}
+.poster__content:hover.poster__content::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 2;
+}
+.poster__content__container{
+    display: none;
+    position: relative;
+    z-index: 3;
+    flex-direction: column;
+}
+.poster__content:hover .poster__content__container{
+    display: flex;
+}
+.poster__content__data {
+    display: flex;
+    padding: 8px 15px;
+    width: 130px;
+    height: 35px;
+    background: #D5621D;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    z-index: 2;
+}
+.poster__content__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+.dish__item__price {
+}

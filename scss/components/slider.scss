@@ -1,0 +1,86 @@
+/* Слайдер */
+// .slick-slider{
+    
+// }
+/* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+/* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+// .slick-slide{}
+/* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+/* Слайд основной */
+// .slick-slide.slick-current{}
+/* Слайд по центру */
+// .slick-slide.slick-center{}
+/* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    position: relative;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev, .slick-arrow.slick-next{
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    padding: 15px;
+    background-color: #D5621D;
+    border-radius: 5px;
+    position: absolute;
+    background-position: center;
+    &:hover{
+        background-color: #492f1f;
+        cursor: pointer;
+    }
+}
+.slick-arrow.slick-prev{
+    background: url('../img/left-arrow.png') no-repeat;
+    top: 40%;
+    left: -80px;
+    background-color: #D5621D;
+    background-position: center;
+    @media screen and (max-width: 1024px) {
+        @include adaptive-value('left', -80, -40, 1);
+    }
+    @media screen and (max-width: 950px) {
+        top: 45%;
+    }
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    background: url('../img/arrow-right.png') no-repeat;
+    top: 40%;
+    right: -80px;
+    background-color: #D5621D;
+    background-position: center;
+    @media screen and (max-width: 1024px) {
+        @include adaptive-value('right', -80, -40, 1);
+    }
+    @media screen and (max-width: 950px) {
+        top: 45%;
+    }
+}
+/* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+// /* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+// /* Активная точка */
+// .slick-dots li.slick-active{}
+// /* Элемент точки */
+// .slick-dots li button{}
